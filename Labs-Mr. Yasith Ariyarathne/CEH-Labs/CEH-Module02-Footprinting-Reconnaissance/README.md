@@ -17,6 +17,7 @@ This document covers detailed steps, command executions, and expected outputs fo
 7. [Lab 7 Mirroring Website using HTTrack Web Site Copier](#lab-7-mirroring-website-using-httrack-web-site-copier) — [View Lab](./Lab%207%20Mirroring%20Website%20using%20HTTrack%20Web%20Site%20Copier/)
 8. [Lab 8 Tracing Emails using eMailTrackerPro](#lab-8-tracing-emails-using-emailtrackerpro) — [View Lab](./Lab%208%20Tracing%20Emails%20using%20eMailTrackerPro/)
 9. [Lab 9 Domain Information Lookup via SmartWhois](#lab-9-domain-information-lookup-via-smartwhois) — [View Lab](./Lab%209%20Domain%20Information%20Lookup%20via%20SmartWhois/)
+10. [Lab 10 Website Footprinting (Central Ops & OSINT Tools)](#lab-10-website-footprinting-central-ops--osint-tools) — [View Lab](./Lab%2010%20Website%20Footprinting%20%28Central%20Ops%20%26%20OSINT%20Tools%29/)
 
 ---
 
@@ -206,3 +207,20 @@ inspy --empspy /usr/share/inspy/wordlists/title-list-large.txt google
 2. Query domain names or target IP addresses obtained during prior reconnaissance phases.
 
 > **Verification:** Application displays the domain registrant profile, contact entries, and authoritative DNS servers.
+
+---
+
+# Lab 10: Website Footprinting (Central Ops & OSINT Tools)
+
+### Part 1: Initial Query Setup & Address Lookup
+
+1. Opened the web browser inside Kali Linux and navigated to `https://centralops.net/co/`.
+2. Entered the target domain `www.certifiedhacker.com` into the **Domain Dossier** search utility.
+3. Enabled checkmarks for **domain whois record**, **network whois record**, and **DNS records**.
+4. Executed the query to initiate passive reconnaissance.
+5. Analyzed the returned **Address lookup** results:
+   * **Canonical Name:** `certifiedhacker.com`
+   * **Aliases:** `www.certifiedhacker.com`
+   * **Addresses:** `162.241.216.11`
+
+   > **Verification:** Central Ops Interface and Address Lookup,Domain WHOIS Record Analysis,Network WHOIS and IP Assignment Details,DNS Records and PTR Reverse Lookups.
