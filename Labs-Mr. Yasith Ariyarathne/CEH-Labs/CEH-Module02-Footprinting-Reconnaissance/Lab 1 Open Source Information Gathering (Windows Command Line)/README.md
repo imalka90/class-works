@@ -49,7 +49,7 @@ The objective of this lab is to utilize native Windows command-line utilities to
    - **Observation:** The command returned `Request timed out` across all four packets, indicating that the TTL expired before the packets reached the destination.
 
 > **📸 Verification Screenshot 1: Ping, MTU Determination, and TTL Expiration**
-> ![Ping, MTU Determination, and TTL Expiration](./screenshots/ping_mtu_1472.png)
+>![Ping, MTU Determination, and TTL Expiration](./screenshots/ping_mtu_1472.png)
 
 ---
 
