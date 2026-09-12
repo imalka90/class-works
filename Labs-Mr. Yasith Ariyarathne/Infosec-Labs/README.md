@@ -23,14 +23,14 @@ The purpose of this portfolio is to capture execution evidence, packet captures,
 
 | Lab ID | Laboratory Exercise Description | Status | Verification Evidence |
 | :--- | :--- | :---: | :---: |
-| **Lab 01** | Accessing and Using the Virtual Machines (Oracle VM VirtualBox & Arch Linux) | ✅ Completed | [View Lab](./Infosec-Labs/lab1-virtual-machines/) |
-| **Lab 02** | Tracing a Route to a Remote Server (ICMP Ping & Traceroute Diagnostics) | ✅ Completed | [View Lab](./Infosec-Labs/lab2-tracing-route/) |
-| **Lab 03** | Becoming a Network Defender (Certifications & Penetration Testing Resources) | ✅ Completed | [View Lab](./Infosec-Labs/lab3-becoming-defender/) |
-| **Lab 04** | Using Wireshark to Examine Ethernet Frames (Layer 2 & ARP Analysis) | ✅ Completed | [View Lab](./Infosec-Labs/lab4-wireshark-ethernet/) |
-| **Lab 05** | Using Wireshark to Observe the TCP 3-Way Handshake | ✅ Completed | [View Lab](./Infosec-Labs/lab5-wireshark-tcp-handshake/) |
-| **Lab 06** | Using Wireshark to Examine a UDP DNS Capture | ✅ Completed | [View Lab](./Infosec-Labs/lab6-wireshark-udp-dns/) |
-| **Lab 07** | Using Wireshark to Examine TCP and UDP Captures (FTP & TFTP Protocols) | ✅ Completed | [View Lab](./Infosec-Labs/lab7-wireshark-tcp-udp/) |
-| **Lab 08** | Using Wireshark to Examine HTTP and HTTPS Traffic | ✅ Completed | [View Lab](./Infosec-Labs/lab8-wireshark%20to%20Examine%20HTTP%20and%20HTTPS%20Traffic/) |
+| **Lab 01** | Accessing and Using the Virtual Machines (Oracle VM VirtualBox & Arch Linux) | ✅ Completed | [View Lab](./lab1-virtual-machines/) |
+| **Lab 02** | Tracing a Route to a Remote Server (ICMP Ping & Traceroute Diagnostics) | ✅ Completed | [View Lab](./lab2-tracing-route/) |
+| **Lab 03** | Becoming a Network Defender (Certifications & Penetration Testing Resources) | ✅ Completed | [View Lab](./lab3-becoming-defender/) |
+| **Lab 04** | Using Wireshark to Examine Ethernet Frames (Layer 2 & ARP Analysis) | ✅ Completed | [View Lab](./lab4-wireshark-ethernet/) |
+| **Lab 05** | Using Wireshark to Observe the TCP 3-Way Handshake | ✅ Completed | [View Lab](./lab5-wireshark-tcp-handshake/) |
+| **Lab 06** | Using Wireshark to Examine a UDP DNS Capture | ✅ Completed | [View Lab](./lab6-wireshark-udp-dns/) |
+| **Lab 07** | Using Wireshark to Examine TCP and UDP Captures (FTP & TFTP Protocols) | ✅ Completed | [View Lab](./lab7-wireshark-tcp-udp/) |
+| **Lab 08** | Using Wireshark to Examine HTTP and HTTPS Traffic | ✅ Completed | [View Lab](./lab8-wireshark%20to%20Examine%20HTTP%20and%20HTTPS%20Traffic/) |
 
 *Status Indicators: 📂 Planned | ⏳ In Progress | ✅ Completed*
 
