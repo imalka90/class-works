@@ -1,9 +1,10 @@
-# CEH-Module02-Footprinting-Reconnaissance
+# CEH Module 02 — Footprinting & Reconnaissance
 
 This document covers detailed steps, command executions, and expected outputs for conducting open-source intelligence (OSINT) and reconnaissance across Windows and Kali Linux environments.
 
 **Labs 1–9: Open Source Information Gathering & Reconnaissance**
 
+---
 
 ## Table of Contents
 
@@ -19,181 +20,189 @@ This document covers detailed steps, command executions, and expected outputs fo
 
 ---
 
-## Lab 1 Open Source Information Gathering (Windows Command Line)
+## Lab 1 — Open Source Information Gathering (Windows Command Line)
 
 ### Tasks 1 & 2: Ping & Maximum Frame Size Identification
 
 1. Open `cmd.exe` as Administrator.
 2. Obtain the target IP address:
 
-   ```dos
-   ping www.certifiedhacker.com
-   ```
+```dos
+ping www.certifiedhacker.com
+```
 
 3. Determine maximum frame size (testing ICMP payload limits without fragmentation):
 
-   ```dos
-   ping www.certifiedhacker.com -f -l 1500
-   ping www.certifiedhacker.com -f -l 1472
-   ```
+```dos
+ping www.certifiedhacker.com -f -l 1500
+ping www.certifiedhacker.com -f -l 1472
+```
 
-**Verification:** Successful reply received at size 1472 without needing packet fragmentation.
+> **Verification:** Successful reply received at size 1472 without needing packet fragmentation.
+
+---
 
 ### Task 3: TTL Expiration & Emulate Tracert
 
 1. Observe TTL expiration in transit:
 
-   ```dos
-   ping www.certifiedhacker.com -i 3
-   ```
+```dos
+ping www.certifiedhacker.com -i 3
+```
 
 2. Map the complete route of hops to the target:
 
-   ```dos
-   tracert www.certifiedhacker.com
-   ```
+```dos
+tracert www.certifiedhacker.com
+```
 
-**Verification:** Terminal displays "TTL expired in transit" responses alongside the completed hop list from `tracert`.
+> **Verification:** Terminal displays "TTL expired in transit" responses alongside the completed hop list from `tracert`.
+
+---
 
 ### Tasks 4–7: DNS Queries via nslookup
 
 1. Launch interactive mode:
 
-   ```dos
-   nslookup
-   ```
+```dos
+nslookup
+```
 
 2. Query the A record (IP address):
 
-   ```text
-   set type=a
-   www.certifiedhacker.com
-   ```
+```text
+set type=a
+www.certifiedhacker.com
+```
 
 3. Query the CNAME and primary name server:
 
-   ```text
-   set type=cname
-   certifiedhacker.com
-   ```
+```text
+set type=cname
+certifiedhacker.com
+```
 
 4. Resolve the name server IP:
 
-   ```text
-   set type=a
-   ns1.bluehost.com
-   ```
+```text
+set type=a
+ns1.bluehost.com
+```
 
-**Verification:** Output resolves the target's IP records and primary authoritative name server details.
+> **Verification:** Output resolves the target's IP records and primary authoritative name server details.
 
 ---
 
-## Lab 2 Finding Subdomains using Sublist3r (Kali Linux)
+## Lab 2 — Finding Subdomains using Sublist3r (Kali Linux)
 
 1. Update system packages and install Sublist3r:
 
-   ```bash
-   sudo apt update && sudo apt -y install sublist3r
-   ```
+```bash
+sudo apt update && sudo apt -y install sublist3r
+```
 
 2. Execute subdomain enumeration via Bing:
 
-   ```bash
-   sublist3r -d google.com -t 3 -e bing
-   ```
+```bash
+sublist3r -d google.com -t 3 -e bing
+```
 
 3. Filter subdomains with open port 80:
 
-   ```bash
-   sublist3r -d google.com -p 80 -e bing
-   ```
+```bash
+sublist3r -d google.com -p 80 -e bing
+```
 
-**Verification:** Output enumerates discovered subdomains, filtered specifically for active HTTP service on port 80.
+> **Verification:** Output enumerates discovered subdomains, filtered specifically for active HTTP service on port 80.
 
 ---
 
-## Lab 3 Gathering Personal Information using Online People Search
+## Lab 3 — Gathering Personal Information using Online People Search
 
-1. Open a browser and navigate to [https://pipl.com](https://pipl.com).
-2. Execute a search for a target individual (e.g., a sample name from the lab's exercise sheet).
+> **Note:** Pipl (`https://pipl.com`) has transitioned to a restricted, paid enterprise model and is no longer available for free public OSINT. **Epieos** (`https://epieos.com`) was selected as a free alternative.
+
+Epieos uses passive enumeration by querying public API endpoints and password recovery mechanisms of third-party platforms (e.g. Google, Trello, Duolingo) on the analyst's behalf — without authenticating or attempting to log into the target's account, so no security alerts or login notifications are triggered.
+
+1. Navigate to [https://epieos.com](https://epieos.com) in a browser.
+2. Execute a search for a target individual (e.g. a sample name or email from the lab's exercise sheet).
 3. Inspect the aggregated public records, including associated history, usernames, and addresses.
 
-**Verification:** Browser displays an aggregated profile summary card for the target subject.
+> **Verification:** Browser displays an aggregated profile summary card for the target subject.
 
 ---
 
-## Lab 4 Gathering Information from LinkedIn using InSpy (Kali Linux)
+## Lab 4 — Gathering Information from LinkedIn using InSpy (Kali Linux)
 
 1. Install InSpy on Kali Linux:
 
-   ```bash
-   sudo apt update && sudo apt -y install inspy
-   ```
+```bash
+sudo apt update && sudo apt -y install inspy
+```
 
 2. Verify the default wordlist directory:
 
-   ```bash
-   ls -ls /usr/share/inspy/wordlists/
-   ```
+```bash
+ls -ls /usr/share/inspy/wordlists/
+```
 
-3. Run Employee Spy (`empspy`) targeting an organization:
+3. Run Employee Spy (`empspy`) targeting an organisation:
 
-   ```bash
-   inspy --empspy /usr/share/inspy/wordlists/title-list-large.txt google
-   ```
+```bash
+inspy --empspy /usr/share/inspy/wordlists/title-list-large.txt google
+```
 
-**Verification:** Terminal displays identified employee titles and associated profile records.
+> **Verification:** Terminal displays identified employee titles and associated profile records.
 
 ---
 
-## Lab 5 Web Reconnaissance via Firebug Developer Tools
+## Lab 5 — Web Reconnaissance via Firebug Developer Tools
 
 1. Open Firefox on Kali Linux and load `http://www.moviescope.com`.
 2. Press `F12` to launch Developer Tools (Firebug).
-3. Inspect the Console / Security tab to identify unencrypted HTTP authentication flags.
-4. Open the Network (NET) tab, click any GET request, and inspect the headers.
+3. Inspect the **Console / Security** tab to identify unencrypted HTTP authentication flags.
+4. Open the **Network (NET)** tab, click any GET request, and inspect the response headers.
 
-**Verification:** Response headers clearly disclose web server signatures (e.g., `Server: Microsoft-IIS`, `X-Powered-By: ASP.NET`).
+> **Verification:** Response headers clearly disclose web server signatures (e.g. `Server: Microsoft-IIS`, `X-Powered-By: ASP.NET`).
 
 ---
 
-## Lab 6 Extracting Data using Web Data Extractor
+## Lab 6 — Extracting Data using Web Data Extractor
 
 1. Launch `wde.exe` (Web Data Extractor).
-2. Click **New** and enter Starting URL: `http://www.certifiedhacker.com`.
-3. Enable options for: Meta tags, Emails, Phone numbers, and Body Text.
+2. Click **New** and enter the starting URL: `http://www.certifiedhacker.com`.
+3. Enable options for: **Meta tags**, **Emails**, **Phone numbers**, and **Body Text**.
 4. Click **Start** and allow parsing to complete.
 
-**Verification:** Navigating to the Emails and Phones tabs displays collected contact metadata extracted from site pages.
+> **Verification:** Navigating to the Emails and Phones tabs displays collected contact metadata extracted from site pages.
 
 ---
 
-## Lab 7 Mirroring Website using HTTrack Web Site Copier
+## Lab 7 — Mirroring Website using HTTrack Web Site Copier
 
-1. Open WinHTTrack Website Copier.
+1. Open **WinHTTrack Website Copier**.
 2. Create a project named `Test Project`.
-3. Set the Target Web Address to [https://www.certifiedhacker.com](https://www.certifiedhacker.com).
+3. Set the Target Web Address to `https://www.certifiedhacker.com`.
 4. Configure scan rules and initiate the mirroring process.
 5. Once completed, click **Browse Mirrored Website**.
 
-**Verification:** Web browser displays mirrored content with a local storage path in the address bar (e.g., `file:///C:/.../index.html`).
+> **Verification:** Web browser displays mirrored content with a local storage path in the address bar (e.g. `file:///C:/.../index.html`).
 
 ---
 
-## Lab 8 Tracing Emails using eMailTrackerPro
+## Lab 8 — Tracing Emails using eMailTrackerPro
 
 1. Open the targeted email message, select **Show Original**, and copy the full header text.
-2. Launch eMailTrackerPro.
+2. Launch **eMailTrackerPro**.
 3. Navigate to **My Trace Reports > Trace Headers**.
 4. Paste the raw internet headers into the input area and click **Trace**.
 
-**Verification:** Application renders hop details, an IP geolocation map, and originating ISP information.
+> **Verification:** Application renders hop details, an IP geolocation map, and originating ISP information.
 
 ---
 
-## Lab 9 Domain Information Lookup via SmartWhois
+## Lab 9 — Domain Information Lookup via SmartWhois
 
-1. Launch SmartWhois.
+1. Launch **SmartWhois**.
 2. Query domain names or target IP addresses obtained during prior reconnaissance phases.
 
-**Verification:** Application displays the domain registrant profile, contact entries, and authoritative DNS servers.
+> **Verification:** Application displays the domain registrant profile, contact entries, and authoritative DNS servers.
