@@ -6,7 +6,7 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 # Network Scanning & Enumeration Lab Series — Index
 
-1. [Lab 1 Scanning the Network using the Colasoft Packet Builder](#lab-1-scanning-the-network-using-the-colasoft-packet-builder) — [View Lab](./Lab%201%20Scanning%20the%20Network%20using%20the%20Colasoft%20Packet%20Builder/)
+1. [Lab 1 Scanning the Network using the Colasoft Packet Builder](#lab-1-scanning-the-network-using-the-colasoft-packet-builder) — [View Lab](./Lab%2001%20Scanning%20the%20Network%20using%20the%20Colasoft%20Packet%20Builder/)
 2. [Lab 2 UDP and TCP Packet Crafting Techniques using HPING3](#lab-2-udp-and-tcp-packet-crafting-techniques-using-hping3) — [View Lab](./Lab%202%20UDP%20and%20TCP%20Packet%20Crafting%20Techniques%20using%20HPING3/)
 3. [Lab 3 Basic Network Troubleshooting using MegaPing](#lab-3-basic-network-troubleshooting-using-megaping) — [View Lab](./Lab%203%20Basic%20Network%20Troubleshooting%20using%20MegaPing/)
 4. [Lab 4 Understanding Network Scanning using Nmap](#lab-4-understanding-network-scanning-using-nmap) — [View Lab](./Lab%204%20Understanding%20Network%20Scanning%20using%20Nmap/)
