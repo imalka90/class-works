@@ -39,7 +39,7 @@ The objective of this lab is to perform website footprinting to gather administr
    * **Registrant Privacy:** PERFECT PRIVACY, LLC (Jacksonville, FL)
 
 > **📸 Verification Screenshot 7: Domain WHOIS Record Analysis**
-> ![Domain Whois Record](./screenshots/2.Domain_Whois_record.jpg)
+> ![Domain Whois Record](./screenshots/2.Domain_Whois_record.png)
 
 ---
 
@@ -52,7 +52,7 @@ The objective of this lab is to perform website footprinting to gather administr
    * **Abuse / Tech Contacts:** `abuse@unifiedlayer.com`, `netops@unifiedlayer.com`
 
 > **📸 Verification Screenshot 8: Network WHOIS and IP Assignment Details**
-> ![Network Whois Record](./screenshots/3.Network_Whois_record.jpg)
+> ![Network Whois Record](./screenshots/3.Network_Whois_record.png)
 
 ---
 
