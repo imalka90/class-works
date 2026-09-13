@@ -4,10 +4,10 @@
 
 The objective of this lab is to explore low-level network probing, host discovery, and firewall/NIDS evasion using **HPING3**, a powerful command-line packet crafting tool. Security analysts utilize HPING3 to manually assemble raw TCP, UDP, and ICMP headers to test network reachability, analyze open/closed port behavior, evaluate stateless vs. stateful firewall rules, and measure network performance under custom flag combinations.
 
-* **Host System:** Linux / Windows Host (Attacker System)
+* **Host System:** Kali Linux (Attacker System)
 * **Primary Tool:** HPING3
 * **Monitoring Tool:** Wireshark
-* **Target Environment:** Local Subnet (`10.10.16.0/24`) / Target IP (`10.10.16.10`)
+* **Target Environment:** Local Subnet (`192.168.45.0/24`) / Target IP (`192.168.45.2`)
 
 ---
 
@@ -19,46 +19,51 @@ The objective of this lab is to explore low-level network probing, host discover
 2. Modified the Time-to-Live (TTL) value to observe network hop behavior and traceroute capabilities:
 
    ```bash
-   hping3 -1 10.10.16.10 --ttl 5 -c 3
+   hping3 -1 192.168.45.2 --ttl 5 -c 3
    ```
 
-3. Verified egress of ICMP echo requests and validated recipient ICMP reply packets.
+3. All 3 ICMP echo requests received replies with 0% packet loss (`ttl=128`, round-trip min/avg/max = 0.9/1.0/1.1 ms), confirming Layer 3 reachability to the target.
 
-📸 **Verification Screenshot 1:** ICMP Echo Probe Execution via HPING3
+> **📸 Verification Screenshot 1: ICMP Echo Probe Execution via HPING3**
+> ![ICMP Echo Probe Execution via HPING3](./screenshots/hping3_icmp_probe.png)
 
 ### Part 2: TCP SYN Scanning & Custom Flag Manipulation
 
-1. Initiated a stealthy TCP SYN probe against specific target ports (e.g., HTTP Port 80, SSH Port 22) to determine port state without completing a full 3-way handshake:
+1. Initiated a stealthy TCP SYN probe against the target's HTTP port (80) to determine port state without completing a full 3-way handshake:
 
    ```bash
-   hping3 -S 10.10.16.10 -p 80 -c 2
+   hping3 -S 192.168.45.2 -p 80 -c 2
    ```
 
-2. Analyzed returning packet flags:
-   * **SYN/ACK (flags=SA):** Port is OPEN and listening.
-   * **RST/ACK (flags=RA):** Port is CLOSED.
+2. Analyzed the returning packet flags:
+   * **SYN/ACK (flags=SA):** would indicate the port is OPEN and listening.
+   * **RST/ACK (flags=RA):** indicates the port is CLOSED.
 
-3. Crafted custom TCP flag combinations (Xmas Scan: FIN, URG, PSH) to test firewall filtering and target OS stack behaviors:
+   Both probes returned `flags=RA`, confirming **port 80 was closed** on the target at the time of the scan.
+
+3. Crafted a custom TCP flag combination (Xmas Scan: FIN, URG, PSH) to further test firewall filtering and target OS stack behavior:
 
    ```bash
-   hping3 -F -U -P 10.10.16.10 -p 80 -c 2
+   hping3 -F -U -P 192.168.45.2 -p 80 -c 2
    ```
 
-📸 **Verification Screenshot 2:** TCP SYN Scan Output Displaying Target Port Status
+> **📸 Verification Screenshot 2: TCP SYN Scan Output Displaying Target Port Status**
+> ![TCP SYN Scan Output Displaying Target Port Status](./screenshots/hping3_tcp_syn_scan.png)
 
 ### Part 3: UDP Scanning & Wireshark Capture Verification
 
-1. Transmitted custom UDP packets to target ports (e.g., Port 53 or Port 137) to perform UDP service discovery:
+1. Transmitted custom UDP packets to the target's DNS port (53) to perform UDP service discovery:
 
    ```bash
-   hping3 --udp 10.10.16.10 -p 53 -c 2
+   hping3 --udp 192.168.45.2 -p 53 -c 2
    ```
 
-2. Monitored traffic in Wireshark using display filter `ip.addr == 10.10.16.10`:
-   * Verified transmission of custom UDP frames.
-   * Observed ICMP Port Unreachable responses from the target for closed UDP ports.
+2. Monitored traffic in Wireshark using display filter `ip.addr == 192.168.45.2 && udp`:
+   * Verified transmission of custom UDP frames (source ports 1606 and 1607 → destination port 53, length 0).
+   * The capture also surfaced unrelated NBNS (NetBIOS Name Service) refresh broadcasts from a second host (`192.168.45.131`) on the same segment, confirming the filter was correctly isolating traffic to/from the target.
 
-📸 **Verification Screenshot 3:** Wireshark Traffic Capture Confirming HPING3 Probe Transmission
+> **📸 Verification Screenshot 3: Wireshark Traffic Capture Confirming HPING3 Probe Transmission**
+> ![Wireshark Traffic Capture Confirming HPING3 Probe Transmission](./screenshots/wireshark_hping3_capture.png)
 
 ---
 
@@ -76,4 +81,4 @@ The objective of this lab is to explore low-level network probing, host discover
 
 ## 4. Laboratory Reflection
 
-This lab demonstrated packet assembly and transmission at the transport layer using HPING3. Manually setting TCP flags (SYN, ACK, RST, FIN, URG, PSH) provided direct visibility into how operating system TCP/IP stacks negotiate state and respond to non-standard requests. Additionally, cross-referencing probe execution with Wireshark confirmed how packet crafting tools interact with live network interfaces, reinforcing the importance of stateful inspection engines and Intrusion Detection Systems in identifying crafted flag anomalies.
+This lab demonstrated packet assembly and transmission at the transport layer using HPING3. Manually setting TCP flags (SYN, ACK, RST, FIN, URG, PSH) provided direct visibility into how operating system TCP/IP stacks negotiate state and respond to non-standard requests — in this case, the `flags=RA` response to the SYN probe confirmed port 80 was closed on the target. Additionally, cross-referencing probe execution with Wireshark confirmed how packet crafting tools interact with live network interfaces, reinforcing the importance of stateful inspection engines and Intrusion Detection Systems in identifying crafted flag anomalies.
