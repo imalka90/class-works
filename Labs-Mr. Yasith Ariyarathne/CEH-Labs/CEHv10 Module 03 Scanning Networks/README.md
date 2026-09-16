@@ -128,13 +128,13 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 * **Core Steps:**
 
-* Install and configure CCProxy on the Windows host (192.168.45.131) listening on HTTP port 8080, verifying active socket binding with netstat -ano | findstr 8080
+  * Install and configure CCProxy on the Windows host (192.168.45.131) listening on HTTP port 8080, verifying active socket binding with netstat -ano | findstr 8080
 
-* Configure system-wide manual proxy settings in Google Chrome on the host machine to point to 127.0.0.1:8080
+  * Configure system-wide manual proxy settings in Google Chrome on the host machine to point to 127.0.0.1:8080
 
-* Configure /etc/proxychains4.conf on Kali Linux (192.168.45.128) with strict_chain mode and add http 192.168.45.131 8080 under the [ProxyList] section
+  * Configure /etc/proxychains4.conf on Kali Linux (192.168.45.128) with strict_chain mode and add http 192.168.45.131 8080 under the [ProxyList] section
 
-* Execute proxy-routed HTTP requests (proxychains4 curl -I [http://google.com](http://google.com)) from Kali Linux and verify active ESTABLISHED TCP connections across the proxy chain via Windows netstat and CCProxy logs.
+  * Execute proxy-routed HTTP requests (proxychains4 curl -I [http://google.com](http://google.com)) from Kali Linux and verify active ESTABLISHED TCP connections across the proxy chain via Windows netstat and CCProxy logs.
 
 ---
 
