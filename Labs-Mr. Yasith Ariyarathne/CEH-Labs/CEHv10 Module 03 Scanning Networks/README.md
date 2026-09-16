@@ -13,6 +13,7 @@ This repository contains practical laboratory documentation, procedure logs, and
 5. [Lab 5 Scanning a Network using NetScan Tools Pro](#lab-5-scanning-a-network-using-netscan-tools-pro) — [View Lab](./Lab%2005%20Scanning%20a%20Network%20using%20NetScan%20Tools%20Pro/)
 6. [Lab 6 Scanning for Network Traffic Going through a Computer's Adapter using IP-Tools](#lab-6-scanning-for-network-traffic-going-through-a-computers-adapter-using-ip-tools) — [View Lab](./Lab%2006%20Scanning%20for%20Network%20Traffic%20Going%20through%20a%20Computer's%20Adapter%20using%20IP-Tools/)
 7. [Lab 7 Checking for Live Systems using Angry IP Scanner](#lab-7-checking-for-live-systems-using-angry-ip-scanner) — [View Lab](./Lab%2007%20Checking%20for%20Live%20Systems%20using%20Angry%20IP%20Scanner/)
+8. [Lab 8 Exploring Various Network Scanning Techniques](#lab-8-exploring-various-network-scanning-techniques) — [View Lab](./Lab%2008%20Exploring%20Various%20Network%20Scanning%20Techniques/)
 
 
 ---
@@ -89,6 +90,15 @@ This repository contains practical laboratory documentation, procedure logs, and
   * Configure the IP scan range (`192.168.45.0` to `192.168.45.255`) and set display preferences to filter for alive hosts.
   * Execute a multi-threaded subnet ping sweep to identify active IP addresses, hostnames, and listening ports.
   * Inspect individual target **Host Details** and fetcher plugins to analyze latency, MAC address vendor metadata, and web server banners.
+
+### Lab 08: Exploring Various Network Scanning Techniques
+* **Topic:** Advanced Nmap Port Scanning Techniques, TCP Flag Manipulation, and Firewall Evasion Analysis
+* **Objective:** Perform advanced port scans (TCP Connect, Xmas, and ACK Flag scans) using Nmap to analyze target service responses and evaluate the impact of host firewall configurations.
+* **Core Steps:**
+  * Execute an aggressive **TCP Connect Scan** (`-sT -A`) against the target to gather OS, service versions, and SMB metadata.
+  * Enable the target host firewall and run an **Xmas Scan** (`-sX -v -T4`) to analyze RFC 793 packet-filtering behavior.
+  * Disable the target firewall and run an **ACK Flag Scan** (`-sA -v -T4`) to verify stateful filtering rule statuses and unfiltered ports.
+
 
 
 ---
