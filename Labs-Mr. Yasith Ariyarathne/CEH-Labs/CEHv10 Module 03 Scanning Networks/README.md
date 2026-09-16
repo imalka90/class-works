@@ -99,7 +99,21 @@ This repository contains practical laboratory documentation, procedure logs, and
   * Enable the target host firewall and run an **Xmas Scan** (`-sX -v -T4`) to analyze RFC 793 packet-filtering behavior.
   * Disable the target firewall and run an **ACK Flag Scan** (`-sA -v -T4`) to verify stateful filtering rule statuses and unfiltered ports.
 
+### Lab 09: Firewalls, Intrusion Detection Systems (IDS), and Evasion Techniques
+* **Topic:** Perimeter Defense Bypassing, Port Scanning Strategy, and Network Traffic Evasion Analysis
+* **Objective:** Assess firewall filtering behavior and evaluate techniques for discovering active hosts and open services when perimeter controls block standard network probes.
+* **Core Steps:**
+  * Configure perimeter firewall rules on the target machine to block ICMP echo requests and standard SYN port scanning probes.
+  * Perform host discovery using alternative TCP SYN/ACK ping probes (`-PS`, `-PA`) to identify active network hosts through stateful filters.
+  * Execute service enumeration utilizing fragmented and protocol-specific probes to analyze rule matching and signature detection limitations.
 
+### Lab 10: Avoiding Scanning Detection using Multiple Decoy IP Addresses
+* **Topic:** IP Packet Fragmentation, Custom MTU Customization, and Decoy Source IP Address Spoofing
+* **Objective:** Conceal network scanning traffic and evade firewall/IDS detection mechanisms using Nmap packet manipulation and source IP obfuscation.
+* **Core Steps:**
+  * Enable Windows Defender Firewall on the target host (`192.168.45.131`) across Domain, Private, and Public network profiles[cite: 4].
+  * Execute an IP fragmentation scan (`nmap -f 192.168.45.131`) and a custom MTU scan (`nmap --mtu 8 192.168.45.131`) from Kali Linux (`192.168.45.128`) to bypass stateful packet inspection signatures[cite: 4].
+  * Launch a decoy scan (`nmap -D RND:10 192.168.45.131`) and capture incoming traffic in Wireshark to verify spoofed source IP address generation[cite: 4].
 
 ---
 
