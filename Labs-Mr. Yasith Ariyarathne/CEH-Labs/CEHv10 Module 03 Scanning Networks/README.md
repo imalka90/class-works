@@ -11,6 +11,8 @@ This repository contains practical laboratory documentation, procedure logs, and
 3. [Lab 3 Basic Network Troubleshooting using MegaPing](#lab-3-basic-network-troubleshooting-using-megaping) — [View Lab](./Lab%2003%20Basic%20Network%20Troubleshooting%20using%20MegaPing/)
 4. [Lab 4 Understanding Network Scanning using Nmap](#lab-4-understanding-network-scanning-using-nmap) — [View Lab](./Lab%2004%20Understanding%20Network%20Scanning%20using%20Nmap/)
 5. [Lab 5 Scanning a Network using NetScan Tools Pro](#lab-5-scanning-a-network-using-netscan-tools-pro) — [View Lab](./Lab%2005%20Scanning%20a%20Network%20using%20NetScan%20Tools%20Pro/)
+6. [Lab 6 Scanning for Network Traffic Going through a Computer's Adapter using IP-Tools](#lab-6-scanning-for-network-traffic-going-through-a-computers-adapter-using-ip-tools) — [View Lab](./Lab%2006%20Scanning%20for%20Network%20Traffic%20Going%20through%20a%20Computer's%20Adapter%20using%20IP-Tools/)
+7. [Lab 7 Checking for Live Systems using Angry IP Scanner](#lab-7-checking-for-live-systems-using-angry-ip-scanner) — [View Lab](./Lab%2007%20Checking%20for%20Live%20Systems%20using%20Angry%20IP%20Scanner/)
 
 
 ---
@@ -71,7 +73,7 @@ This repository contains practical laboratory documentation, procedure logs, and
   * Execute **Ping Scans** to verify operational host availability.
   
 
-# Lab 06: Scanning for Network Traffic Going through a Computer's Adapter using IP-Tools
+### Lab 06: Scanning for Network Traffic Going through a Computer's Adapter using IP-Tools
 
 * **Topic:** Adapter Statistics, Live Traffic Monitoring, and Network Host/Port Discovery
 * **Objective:** Monitor network interface metrics, observe real-time packet throughput, and audit active host entry points using IP-Tools.
@@ -80,7 +82,13 @@ This repository contains practical laboratory documentation, procedure logs, and
   * Access **Adapter Statistics** to track bandwidth consumption, active interface metrics, and real-time packet flow.
   * Execute **Ping Scans** and **Port Scans** across target IP ranges to detect live operational hosts and listening network services.
 
-
+### Lab 07: Checking for Live Systems using Angry IP Scanner
+* **Topic:** Multi-threaded Subnet Sweeping, Hostname Resolution, and Host Fetcher Inspection
+* **Objective:** Perform rapid IP reachability sweeps, map active hosts, and inspect target system metadata using Angry IP Scanner.
+* **Core Steps:**
+  * Configure the IP scan range (`192.168.45.0` to `192.168.45.255`) and set display preferences to filter for alive hosts.
+  * Execute a multi-threaded subnet ping sweep to identify active IP addresses, hostnames, and listening ports.
+  * Inspect individual target **Host Details** and fetcher plugins to analyze latency, MAC address vendor metadata, and web server banners.
 
 
 ---
