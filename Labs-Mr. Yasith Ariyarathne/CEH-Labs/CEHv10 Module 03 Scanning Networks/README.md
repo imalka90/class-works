@@ -14,6 +14,12 @@ This repository contains practical laboratory documentation, procedure logs, and
 6. [Lab 6 Scanning for Network Traffic Going through a Computer's Adapter using IP-Tools](#lab-6-scanning-for-network-traffic-going-through-a-computers-adapter-using-ip-tools) — [View Lab](./Lab%2006%20Scanning%20for%20Network%20Traffic%20Going%20through%20a%20Computer's%20Adapter%20using%20IP-Tools/)
 7. [Lab 7 Checking for Live Systems using Angry IP Scanner](#lab-7-checking-for-live-systems-using-angry-ip-scanner) — [View Lab](./Lab%2007%20Checking%20for%20Live%20Systems%20using%20Angry%20IP%20Scanner/)
 8. [Lab 8 Exploring Various Network Scanning Techniques](#lab-8-exploring-various-network-scanning-techniques) — [View Lab](./Lab%2008%20Exploring%20Various%20Network%20Scanning%20Techniques/)
+9. [Lab 09 Perform ICMP Probing using PingTraceroute for Network Troubleshooting](./Lab%2009%20Perform%20ICMP%20Probing%20using%20PingTraceroute%20for%20Network%20Troubleshooting/)
+10. [Lab 10 Avoiding Scanning Detection using Multiple Decoy IP Addresses](./Lab%2010%20Avoiding%20Scanning%20Detection%20using%20Multiple%20Decoy%20IP%20Addresses/)
+11. [Lab 11 Daisy Chaining using Proxy Workbench](./Lab%2011%20Daisy%20Chaining%20using%20Proxy%20Workbench/)
+
+
+
 
 
 ---
@@ -111,9 +117,24 @@ This repository contains practical laboratory documentation, procedure logs, and
 * **Topic:** IP Packet Fragmentation, Custom MTU Customization, and Decoy Source IP Address Spoofing
 * **Objective:** Conceal network scanning traffic and evade firewall/IDS detection mechanisms using Nmap packet manipulation and source IP obfuscation.
 * **Core Steps:**
-  * Enable Windows Defender Firewall on the target host (`192.168.45.131`) across Domain, Private, and Public network profiles[cite: 4].
-  * Execute an IP fragmentation scan (`nmap -f 192.168.45.131`) and a custom MTU scan (`nmap --mtu 8 192.168.45.131`) from Kali Linux (`192.168.45.128`) to bypass stateful packet inspection signatures[cite: 4].
-  * Launch a decoy scan (`nmap -D RND:10 192.168.45.131`) and capture incoming traffic in Wireshark to verify spoofed source IP address generation[cite: 4].
+  * Enable Windows Defender Firewall on the target host (`192.168.45.131`) across Domain, Private, and Public network profiles
+  * Execute an IP fragmentation scan (`nmap -f 192.168.45.131`) and a custom MTU scan (`nmap --mtu 8 192.168.45.131`) from Kali Linux (`192.168.45.128`) to bypass stateful packet inspection signatures
+  * Launch a decoy scan (`nmap -D RND:10 192.168.45.131`) and capture incoming traffic in Wireshark to verify spoofed source IP address generation.
+
+### Lab 11: Daisy Chaining using Proxy Tools
+* **Topic:** Proxy Daisy Chaining, Intermediate Hop Routing, and Source IP Anonymization
+
+* **Objective:** Conceal network scanning and browsing traffic by routing requests through intermediate proxy nodes using CCProxy and ProxyChains-ng to evade perimeter attribution and direct logging.
+
+* **Core Steps:**
+
+* Install and configure CCProxy on the Windows host (192.168.45.131) listening on HTTP port 8080, verifying active socket binding with netstat -ano | findstr 8080
+
+* Configure system-wide manual proxy settings in Google Chrome on the host machine to point to 127.0.0.1:8080
+
+* Configure /etc/proxychains4.conf on Kali Linux (192.168.45.128) with strict_chain mode and add http 192.168.45.131 8080 under the [ProxyList] section
+
+* Execute proxy-routed HTTP requests (proxychains4 curl -I [http://google.com](http://google.com)) from Kali Linux and verify active ESTABLISHED TCP connections across the proxy chain via Windows netstat and CCProxy logs.
 
 ---
 
