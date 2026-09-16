@@ -8,16 +8,25 @@ This document covers detailed steps, command executions, and expected outputs fo
 
 ## Table of Contents
 
-1. [Lab 1 Open Source Information Gathering (Windows Command Line)](#lab-1-open-source-information-gathering-windows-command-line) — [View Lab](./Lab%201%20Open%20Source%20Information%20Gathering%20%28Windows%20Command%20Line%29/)
-2. [Lab 2 Finding Subdomains using Sublist3r (Kali Linux)](#lab-2-finding-subdomains-using-sublist3r-kali-linux) — [View Lab](./Lab%202%20Finding%20Subdomains%20using%20Sublist3r%20%28Kali%20Linux%29/)
-3. [Lab 3 Gathering Personal Information using Online People Search](#lab-3-gathering-personal-information-using-online-people-search) — [View Lab](./Lab%203%20Gathering%20Personal%20Information%20using%20Online%20People%20Search/)
-4. [Lab 4 Gathering Information from LinkedIn using InSpy (Kali Linux)](#lab-4-gathering-information-from-linkedin-using-inspy-kali-linux) — [View Lab](./Lab%204%20Gathering%20Information%20from%20LinkedIn%20using%20InSpy%20%28Kali%20Linux%29/)
+1. [Lab 1 Open Source Information Gathering (Windows Command Line)](#lab-1-open-source-information-gathering-windows-command-line) — [View Lab](./Lab%2001%20Open%20Source%20Information%20Gathering%20(Windows%20Command%20Line)/)
+
+2. [Lab 2 Finding Subdomains using Sublist3r (Kali Linux)](#lab-2-finding-subdomains-using-sublist3r-kali-linux) — [View Lab](./Lab%2002%20Finding%20Subdomains%20using%20Sublist3r%20(Kali%20Linux)/)
+
+3. [Lab 3 Gathering Personal Information using Online People Search](#lab-3-gathering-personal-information-using-online-people-search) — [View Lab](./Lab%2003%20Gathering%20Personal%20Information%20using%20Online%20People%20Search/)
+
+4. [Lab 4 Gathering Information from LinkedIn using InSpy (Kali Linux)](#lab-4-gathering-information-from-linkedin-using-inspy-kali-linux) — [View Lab](./Lab%2004%20Gathering%20Information%20from%20LinkedIn%20using%20InSpy%20(Kali%20Linux)/)
+
 5. [Lab 5 Web Reconnaissance via Firebug Developer Tools](#lab-5-web-reconnaissance-via-firebug-developer-tools) — [View Lab](./Lab%205%20Web%20Reconnaissance%20via%20Firebug%20%20Developer%20Tools/)
-6. [Lab 6 Extracting Data using Web Data Extractor](#lab-6-extracting-data-using-web-data-extractor) — [View Lab](./Lab%206%20Extracting%20Data%20using%20Web%20Data%20Extractor/)
-7. [Lab 7 Mirroring Website using HTTrack Web Site Copier](#lab-7-mirroring-website-using-httrack-web-site-copier) — [View Lab](./Lab%207%20Mirroring%20Website%20using%20HTTrack%20Web%20Site%20Copier/)
-8. [Lab 8 Tracing Emails using eMailTrackerPro](#lab-8-tracing-emails-using-emailtrackerpro) — [View Lab](./Lab%208%20Tracing%20Emails%20using%20eMailTrackerPro/)
-9. [Lab 9 Domain Information Lookup via SmartWhois](#lab-9-domain-information-lookup-via-smartwhois) — [View Lab](./Lab%209%20Domain%20Information%20Lookup%20via%20SmartWhois/)
-10. [Lab 10 Website Footprinting (Central Ops & OSINT Tools)](#lab-10-website-footprinting-central-ops--osint-tools) — [View Lab](./Lab%2010%20Website%20Footprinting%20%28Central%20Ops%20%26%20OSINT%20Tools%29/)
+
+6. [Lab 6 Extracting Data using Web Data Extractor](#lab-6-extracting-data-using-web-data-extractor) — [View Lab](./Lab%2006%20Extracting%20Data%20using%20Web%20Data%20Extractor/)
+
+7. [Lab 7 Mirroring Website using HTTrack Web Site Copier](#lab-7-mirroring-website-using-httrack-web-site-copier) — [View Lab](./Lab%2007%20Mirroring%20Website%20using%20HTTrack%20Web%20Site%20Copier/)
+
+8. [Lab 8 Tracing Emails using eMailTrackerPro](#lab-8-tracing-emails-using-emailtrackerpro) — [View Lab](./Lab%2008%20Tracing%20Emails%20using%20eMailTrackerPro/)
+
+9. [Lab 9 Domain Information Lookup via SmartWhois](#lab-9-domain-information-lookup-via-smartwhois) — [View Lab](./Lab%2009%20Domain%20Information%20Lookup%20via%20SmartWhois/)
+
+10. [Lab 10 Website Footprinting (Central Ops & OSINT Tools)](#lab-10-website-footprinting-central-ops--osint-tools) — [View Lab](./Lab%2010%20Website%20Footprinting%20(Central%20Ops%20&%20OSINT%20Tools)/)
 
 ---
 
