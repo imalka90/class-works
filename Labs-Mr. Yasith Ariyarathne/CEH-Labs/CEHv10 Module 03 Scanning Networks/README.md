@@ -14,10 +14,11 @@ This repository contains practical laboratory documentation, procedure logs, and
 6. [Lab 6 Scanning for Network Traffic Going through a Computer's Adapter using IP-Tools](#lab-6-scanning-for-network-traffic-going-through-a-computers-adapter-using-ip-tools) — [View Lab](./Lab%2006%20Scanning%20for%20Network%20Traffic%20Going%20through%20a%20Computer's%20Adapter%20using%20IP-Tools/)
 7. [Lab 7 Checking for Live Systems using Angry IP Scanner](#lab-7-checking-for-live-systems-using-angry-ip-scanner) — [View Lab](./Lab%2007%20Checking%20for%20Live%20Systems%20using%20Angry%20IP%20Scanner/)
 8. [Lab 8 Exploring Various Network Scanning Techniques](#lab-8-exploring-various-network-scanning-techniques) — [View Lab](./Lab%2008%20Exploring%20Various%20Network%20Scanning%20Techniques/)
-9. [Lab 09 Perform ICMP Probing using PingTraceroute for Network Troubleshooting](#lab-09-firewalls-intrusion-detection-systems-ids-and-evasion-techniques) - [View Lab](./Lab%2009%20Perform%20ICMP%20Probing%20using%20PingTraceroute%20for%20Network%20Troubleshooting/)
-10. [Lab 10 Avoiding Scanning Detection using Multiple Decoy IP Addresses](#lab-10-avoiding-scanning-detection-using-multiple-decoy-ip-addresses)- [View Lab](./Lab%2010%20Avoiding%20Scanning%20Detection%20using%20Multiple%20Decoy%20IP%20Addresses/)
-11. [Lab 11 Daisy Chaining using Proxy Workbench](#lab-11-daisy-chaining-using-proxy-tools)- [View Lab](./Lab%2011%20Daisy%20Chaining%20using%20Proxy%20Workbench/)
-12. [Lab 12 Anonymous Browsing using Proxy Switcher](#lab-12-anonymous-browsing-using-proxy-switcher)- [View Lab](./Lab%2012%20Anonymous%20Browsing%20using%20Proxy%20Switcher/)
+9. [Lab 09 Perform ICMP Probing using PingTraceroute for Network Troubleshooting](#lab-09-firewalls-intrusion-detection-systems-ids-and-evasion-techniques) — [View Lab](./Lab%2009%20Perform%20ICMP%20Probing%20using%20PingTraceroute%20for%20Network%20Troubleshooting/)
+10. [Lab 10 Avoiding Scanning Detection using Multiple Decoy IP Addresses](#lab-10-avoiding-scanning-detection-using-multiple-decoy-ip-addresses) — [View Lab](./Lab%2010%20Avoiding%20Scanning%20Detection%20using%20Multiple%20Decoy%20IP%20Addresses/)
+11. [Lab 11 Daisy Chaining using Proxy Workbench](#lab-11-daisy-chaining-using-proxy-tools) — [View Lab](./Lab%2011%20Daisy%20Chaining%20using%20Proxy%20Workbench/)
+12. [Lab 12 Anonymous Browsing using Proxy Switcher](#lab-12-anonymous-browsing-using-proxy-switcher) — [View Lab](./Lab%2012%20Anonymous%20Browsing%20using%20Proxy%20Switcher/)
+13. [Lab 13 Anonymous Browsing using CyberGhost](#lab-13-anonymous-browsing-using-cyberghost) — [View Lab](./Lab%2013%20Anonymous%20Browsing%20using%20CyberGhost/)
 
 
 
@@ -143,7 +144,7 @@ This repository contains practical laboratory documentation, procedure logs, and
 ### Lab 12: Anonymous Browsing using Proxy Switcher
 * **Topic:** Automated Proxy Discovery, Latency Testing, and Dynamic IP Anonymization
 
-* **Objective**: Use Proxy Switcher to automatically discover, test, and switch between high-anonymity proxy servers to mask the host's real IP address and maintain internet anonymity during security assessments.
+* **Objective:** Use Proxy Switcher to automatically discover, test, and switch between high-anonymity proxy servers to mask the host's real IP address and maintain internet anonymity during security assessments.
 
 * **Core Steps:**
 
@@ -154,6 +155,23 @@ This repository contains practical laboratory documentation, procedure logs, and
   * Select an active high-anonymity proxy server from the tested list and click Switch to Selected Proxy to route all outgoing web traffic through the proxy node.
 
   * Open a web browser, navigate to an IP-checking site (such as whatismyip.com), and verify that the real host IP address is successfully hidden and replaced by the proxy server's IP address.
+
+### Lab 13 Anonymous Browsing using CyberGhost
+
+* **Topic:** System-Wide VPN Anonymization, Server Node Selection, and Encrypted Tunneling
+
+* **Objective:** Use CyberGhost to automatically connect to secure VPN servers, encrypt system-wide web traffic, and mask the host's real IP address to maintain internet anonymity during security assessments.
+
+* **Core Steps:**
+
+  * Install and launch CyberGhost on the Windows system, opening the application with administrative privileges from the setup wizard or start menu or tool directory (C:\Users\Administrator\Downloads\CyberGhost).
+
+  * Configure anonymity settings and select the desired connection mode (such as Surf Anonymously or Unblock Streaming) alongside choosing a specific country or server node.
+
+  * Click the Connect button to establish an encrypted and secure VPN tunnel, routing all system web traffic through the CyberGhost network.
+
+  * Open a web browser, navigate to an IP-checking site (such as whatismyip.com), and verify that the real host IP address and geographic location are successfully hidden and replaced by the assigned CyberGhost server details.
+
 
 
 ---
