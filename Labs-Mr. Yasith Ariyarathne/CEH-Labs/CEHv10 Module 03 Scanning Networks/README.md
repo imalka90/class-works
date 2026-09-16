@@ -20,10 +20,9 @@ This repository contains practical laboratory documentation, procedure logs, and
 12. [Lab 12 Anonymous Browsing using Proxy Switcher](#lab-12-anonymous-browsing-using-proxy-switcher) — [View Lab](./Lab%2012%20Anonymous%20Browsing%20using%20Proxy%20Switcher/)
 13. [Lab 13 Anonymous Browsing using CyberGhost](#lab-13-anonymous-browsing-using-cyberghost) — [View Lab](./Lab%2013%20Anonymous%20Browsing%20using%20CyberGhost/)
 
-14. [Lab 14 Identify Target System's OS with Time-to-Live (TTL) and TCP Window Sizes using Wireshark](#lab-14-identify-target-systems-os-with-time-to-live-ttl-and-tcp-window-sizes-using-wireshark)— [View Lab](./Lab%2014%20Identify%20Target%20System's%20OS%20with%20Time-to-Live%20(TTL)%20and%20TCP%20Window%20Sizes%20using%20Wireshark/)
+14. [Lab 14 Identify Target System's OS with Time-to-Live (TTL) and TCP Window Sizes using Wireshark](#lab-14-identify-target-systems-os-with-time-to-live-ttl-and-tcp-window-sizes-using-wireshark) — [View Lab](./Lab%2014%20Identify%20Target%20System's%20OS%20with%20Time-to-Live%20(TTL)%20and%20TCP%20Window%20Sizes%20using%20Wireshark/)
 
-
-
+15. [Lab 15: Drawing Network Diagrams using Network Topology Mapper](#lab-15-drawing-network-diagrams-using-network-topology-mapper) — [View Lab](./Lab%2015%20Drawing%20Network%20Diagrams%20using%20Network%20Topology%20Mapper/)
 ---
 
 
@@ -188,6 +187,21 @@ This repository contains practical laboratory documentation, procedure logs, and
   * Inspect the initial packets of a TCP session, expanding the Internet Protocol header to examine the Time-to-Live (TTL) value and the Transmission Control Protocol section to check the TCP Window Size.
 
   * Correlate the observed TTL and window size values against known OS fingerprinting signatures (such as TTL 128 for Windows or TTL 64 for Linux) to accurately identify the target system's operating system.
+
+### Lab 15: Drawing Network Diagrams using Network Topology Mapper
+* **Topic:** Automated Network Discovery, Layer 2/3 Topology Mapping, and Visual Diagram Generation
+
+* **Objective:** Use SolarWinds Network Topology Mapper (NTM) to discover network devices within target subnets, correlate Layer 2 and Layer 3 topology data using SNMP and WMI credentials, and produce a comprehensive visual network diagram during security assessments.
+
+* **Core Steps:**
+
+  * Launch SolarWinds Network Topology Mapper with administrative privileges and create a new network map project or discovery wizard.
+
+  * Configure the network discovery scan by defining the target IP address ranges or subnets and providing SNMP (such as community strings like public and private) and WMI credentials.
+
+  * Execute the scan to process discovery data, monitor node discovery, packet exchanges, and map generation progress.
+
+  * Review, organize, and export the generated visual network diagram illustrating device interconnections, links, and subnet layouts for documentation and reconnaissance analysis.
 
 
 ---
