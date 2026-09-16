@@ -6,16 +6,26 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 # System & Network Enumeration Lab Series — Index
 
-1. [Lab 1 NetBIOS Enumeration using Global Network Inventory](#lab-1-netbios-enumeration-using-global-network-inventory) — [View Lab](./Lab%2001%20NetBIOS%20Enumeration%20using%20Global%20Network%20Inventory/)
-2. [Lab 2 Enumerating Network Resources using Advanced IP Scanner](#lab-2-enumerating-network-resources-using-advanced-ip-scanner) — [View Lab](./Lab%2002%20Enumerating%20Network%20Resources%20using%20Advanced%20IP%20Scanner/)
+1. [Lab 1 NetBIOS Enumeration using Global Network Inventory](#lab-1-netbios-enumeration-using-global-network-inventory) — [View Lab](./NetBIOS%20Enumeration%20using%20Global%20Network%20Inventory/)
+
+2. [Lab 2 Enumerating Network Resources using Advanced IP Scanner](#lab-2-enumerating-network-resources-using-advanced-ip-scanner) — [View Lab](./Enumerating%20Network%20Resources%20using%20Advanced%20IP%20Scanner/)
+
 3. [Lab 3 Performing Network Enumeration using SuperScan](#lab-3-performing-network-enumeration-using-superscan) — [View Lab](./Lab%2003%20Performing%20Network%20Enumeration%20using%20SuperScan/)
+
 4. [Lab 4 Enumerating Resources in a Local Machine using Hyena](#lab-4-enumerating-resources-in-a-local-machine-using-hyena) — [View Lab](./Lab%2004%20Enumerating%20Resources%20in%20a%20Local%20Machine%20using%20Hyena/)
+
 5. [Lab 5 Performing Network Enumeration using NetBIOS Enumerator](#lab-5-performing-network-enumeration-using-netbios-enumerator) — [View Lab](./Lab%2005%20Performing%20Network%20Enumeration%20using%20NetBIOS%20Enumerator/)
+
 6. [Lab 6 Enumerating a Network using SoftPerfect Network Scanner](#lab-6-enumerating-a-network-using-softperfect-network-scanner) — [View Lab](./Lab%2006%20Enumerating%20a%20Network%20using%20SoftPerfect%20Network%20Scanner/)
+
 7. [Lab 7 Enumerating a Target Network using Nmap and Net Use](#lab-7-enumerating-a-target-network-using-nmap-and-net-use) — [View Lab](./Lab%2007%20Enumerating%20a%20Target%20Network%20using%20Nmap%20and%20Net%20Use/)
+
 8. [Lab 8 Enumerating Services on a Target Machine](#lab-8-enumerating-services-on-a-target-machine) — [View Lab](./Lab%2008%20Enumerating%20Services%20on%20a%20Target%20Machine/)
+
 9. [Lab 9 SNMP Enumeration using SNMP Enum](#lab-9-snmp-enumeration-using-snmp-enum) — [View Lab](./Lab%2009%20SNMP%20Enumeration%20using%20SNMP%20Enum/)
+
 10. [Lab 10 LDAP Enumeration using Active Directory Explorer](#lab-10-ldap-enumeration-using-active-directory-explorer) — [View Lab](./Lab%2010%20LDAP%20Enumeration%20using%20Active%20Directory%20Explorer/)
+
 11. [Lab 11 Enumerating Information from Windows and Samba Host using Enum4linux](#lab-11-enumerating-information-from-windows-and-samba-host-using-enum4linux) — [View Lab](./Lab%2011%20Enumerating-Information-from-Windows-and-Samba-Host-using-Enum4linux/)
 
 ---
