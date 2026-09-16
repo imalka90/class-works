@@ -20,7 +20,7 @@ This repository contains practical laboratory documentation, procedure logs, and
 12. [Lab 12 Anonymous Browsing using Proxy Switcher](#lab-12-anonymous-browsing-using-proxy-switcher) — [View Lab](./Lab%2012%20Anonymous%20Browsing%20using%20Proxy%20Switcher/)
 13. [Lab 13 Anonymous Browsing using CyberGhost](#lab-13-anonymous-browsing-using-cyberghost) — [View Lab](./Lab%2013%20Anonymous%20Browsing%20using%20CyberGhost/)
 
-
+14. [Lab 14 Identify Target System's OS with Time-to-Live (TTL) and TCP Window Sizes using Wireshark](#lab-14-identify-target-systems-os-with-time-to-live-ttl-and-tcp-window-sizes-using-wireshark)— [View Lab](./Lab%2014%20Identify%20Target%20System's%20OS%20with%20Time-to-Live%20(TTL)%20and%20TCP%20Window%20Sizes%20using%20Wireshark/)
 
 
 
@@ -172,6 +172,22 @@ This repository contains practical laboratory documentation, procedure logs, and
 
   * Open a web browser, navigate to an IP-checking site (such as whatismyip.com), and verify that the real host IP address and geographic location are successfully hidden and replaced by the assigned CyberGhost server details.
 
+
+
+### Lab 14: Identify Target System's OS with Time-to-Live (TTL) and TCP Window Sizes using Wireshark
+* **Topic**: Passive OS Fingerprinting, IP Header Analysis, and TCP Window Size Inspection
+
+* **Objective:** Use Wireshark to capture network packets, inspect Time-to-Live (TTL) and TCP window size fields in IP/TCP headers, and identify the operating system of a target system during security assessments.
+
+* **Core Steps:**
+
+  * Launch Wireshark with administrative privileges on the Windows system and start packet capture on the active network interface.
+
+  * Generate network traffic to the target system (such as Windows Server 2016, Windows 10, or an Ubuntu VM) and use capture filters in Wireshark to isolate traffic originating from the target machine.
+
+  * Inspect the initial packets of a TCP session, expanding the Internet Protocol header to examine the Time-to-Live (TTL) value and the Transmission Control Protocol section to check the TCP Window Size.
+
+  * Correlate the observed TTL and window size values against known OS fingerprinting signatures (such as TTL 128 for Windows or TTL 64 for Linux) to accurately identify the target system's operating system.
 
 
 ---
