@@ -1,4 +1,4 @@
-# Lab: NetBIOS Enumeration using Global Network Inventory
+# Lab 1: NetBIOS Enumeration using Global Network Inventory
 
 ## 1. Laboratory Overview & Objectives
 

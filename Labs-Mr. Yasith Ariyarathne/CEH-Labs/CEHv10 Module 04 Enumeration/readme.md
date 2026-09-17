@@ -6,13 +6,13 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 # System & Network Enumeration Lab Series — Index
 
-1. [Lab 1 NetBIOS Enumeration using Global Network Inventory](#lab-1-netbios-enumeration-using-global-network-inventory) — [View Lab](./NetBIOS%20Enumeration%20using%20Global%20Network%20Inventory/)
+1. [Lab 1 NetBIOS Enumeration using Global Network Inventory](#lab-1-netbios-enumeration-using-global-network-inventory) — [View Lab](./Lab%201%20NetBIOS%20Enumeration%20using%20Global%20Network%20Inventory/)
 
-2. [Lab 2 Enumerating Network Resources using Advanced IP Scanner](#lab-2-enumerating-network-resources-using-advanced-ip-scanner) — [View Lab](./Enumerating%20Network%20Resources%20using%20Advanced%20IP%20Scanner/)
+2. [Lab 2 Enumerating Network Resources using Advanced IP Scanner](#lab-2-enumerating-network-resources-using-advanced-ip-scanner) — [View Lab](./Lab%202%20Enumerating%20Network%20Resources%20using%20Advanced%20IP%20Scanner/)
 
-3. [Lab 3 Performing Network Enumeration using SuperScan](#lab-3-performing-network-enumeration-using-superscan) — [View Lab](./Lab%2003%20Performing%20Network%20Enumeration%20using%20SuperScan/)
+3. [Lab 3 Performing Network Enumeration using SuperScan](#lab-3-performing-network-enumeration-using-superscan) — [View Lab](./Lab%203%20Performing%20Network%20Enumeration%20using%20SuperScan/)
 
-4. [Lab 4 Enumerating Resources in a Local Machine using Hyena](#lab-4-enumerating-resources-in-a-local-machine-using-hyena) — [View Lab](./Lab%2004%20Enumerating%20Resources%20in%20a%20Local%20Machine%20using%20Hyena/)
+4. [Lab 4 Enumerating Resources in a Local Machine using Hyena](#lab-4-enumerating-resources-in-a-local-machine-using-hyena) — [View Lab](./Lab%204%20Enumerating%20Resources%20in%20a%20Local%20Machine%20using%20Hyena/)
 
 5. [Lab 5 Performing Network Enumeration using NetBIOS Enumerator](#lab-5-performing-network-enumeration-using-netbios-enumerator) — [View Lab](./Lab%2005%20Performing%20Network%20Enumeration%20using%20NetBIOS%20Enumerator/)
 

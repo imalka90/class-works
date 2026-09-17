@@ -1,4 +1,4 @@
-# Lab: Enumerating Network Resources using Advanced IP Scanner
+# Lab 2: Enumerating Network Resources using Advanced IP Scanner
 
 ## 1. Laboratory Overview & Objectives
 
