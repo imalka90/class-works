@@ -1,4 +1,4 @@
-# Lab: Performing Network Enumeration using NetBIOS Enumerator
+# Lab 5: Performing Network Enumeration using NetBIOS Enumerator
 
 ## 1. Laboratory Overview & Objectives
 

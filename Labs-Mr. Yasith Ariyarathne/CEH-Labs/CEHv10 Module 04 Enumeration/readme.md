@@ -14,11 +14,11 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 4. [Lab 4 Enumerating Resources in a Local Machine using Hyena](#lab-4-enumerating-resources-in-a-local-machine-using-hyena) — [View Lab](./Lab%204%20Enumerating%20Resources%20in%20a%20Local%20Machine%20using%20Hyena/)
 
-5. [Lab 5 Performing Network Enumeration using NetBIOS Enumerator](#lab-5-performing-network-enumeration-using-netbios-enumerator) — [View Lab](./Lab%2005%20Performing%20Network%20Enumeration%20using%20NetBIOS%20Enumerator/)
+5. [Lab 5 Performing Network Enumeration using NetBIOS Enumerator](#lab-5-performing-network-enumeration-using-netbios-enumerator) — [View Lab](./Lab%205%20Performing%20Network%20Enumeration%20using%20NetBIOS%20Enumerator/)
 
-6. [Lab 6 Enumerating a Network using SoftPerfect Network Scanner](#lab-6-enumerating-a-network-using-softperfect-network-scanner) — [View Lab](./Lab%2006%20Enumerating%20a%20Network%20using%20SoftPerfect%20Network%20Scanner/)
+6. [Lab 6 Enumerating a Network using SoftPerfect Network Scanner](#lab-6-enumerating-a-network-using-softperfect-network-scanner) — [View Lab](./Lab%206%20Enumerating%20a%20Network%20using%20SoftPerfect%20Network%20Scanner/)
 
-7. [Lab 7 Enumerating a Target Network using Nmap and Net Use](#lab-7-enumerating-a-target-network-using-nmap-and-net-use) — [View Lab](./Lab%2007%20Enumerating%20a%20Target%20Network%20using%20Nmap%20and%20Net%20Use/)
+7. [Lab 7 Enumerating a Target Network using Nmap and Net Use](#lab-7-enumerating-a-target-network-using-nmap-and-net-use) — [View Lab](./Lab%207%20Enumerating%20a%20Target%20Network%20using%20Nmap%20and%20Net%20Use/)
 
 8. [Lab 8 Enumerating Services on a Target Machine](#lab-8-enumerating-services-on-a-target-machine) — [View Lab](./Lab%2008%20Enumerating%20Services%20on%20a%20Target%20Machine/)
 
