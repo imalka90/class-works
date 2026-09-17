@@ -20,11 +20,11 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 7. [Lab 7 Enumerating a Target Network using Nmap and Net Use](#lab-7-enumerating-a-target-network-using-nmap-and-net-use) — [View Lab](./Lab%207%20Enumerating%20a%20Target%20Network%20using%20Nmap%20and%20Net%20Use/)
 
-8. [Lab 8 Enumerating Services on a Target Machine](#lab-8-enumerating-services-on-a-target-machine) — [View Lab](./Lab%2008%20Enumerating%20Services%20on%20a%20Target%20Machine/)
+8. [Lab 8 Enumerating Services on a Target Machine](#lab-8-enumerating-services-on-a-target-machine) — [View Lab](./Lab%208%20Enumerating%20Services%20on%20a%20Target%20Machine/)
 
 9. [Lab 9 SNMP Enumeration using SNMP Enum](#lab-9-snmp-enumeration-using-snmp-enum) — [View Lab](./Lab%2009%20SNMP%20Enumeration%20using%20SNMP%20Enum/)
 
-10. [Lab 10 LDAP Enumeration using Active Directory Explorer](#lab-10-ldap-enumeration-using-active-directory-explorer) — [View Lab](./Lab%2010%20LDAP%20Enumeration%20using%20Active%20Directory%20Explorer/)
+10. [Lab 10 LDAP Enumeration using Active Directory Explorer](#lab-10-ldap-enumeration-using-active-directory-explorer) — [View Lab](./Lab%209%20SNMP%20Enumeration%20using%20SNMP%20Enum/)
 
 11. [Lab 11 Enumerating Information from Windows and Samba Host using Enum4linux](#lab-11-enumerating-information-from-windows-and-samba-host-using-enum4linux) — [View Lab](./Lab%2011%20Enumerating-Information-from-Windows-and-Samba-Host-using-Enum4linux/)
 
