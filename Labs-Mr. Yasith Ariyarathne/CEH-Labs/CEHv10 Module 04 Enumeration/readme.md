@@ -26,7 +26,7 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 10. [Lab 10 LDAP Enumeration using Active Directory Explorer](#lab-10-ldap-enumeration-using-active-directory-explorer) — [View Lab](./Lab%2010%20LDAP%20Enumeration%20using%20Active%20Directory%20Explorer/)
 
-11. [Lab 11 Enumerating Information from Windows and Samba Host using Enum4linux](#lab-11-enumerating-information-from-windows-and-samba-host-using-enum4linux) — [View Lab](./Lab%2011%20Enumerating-Information-from-Windows-and-Samba-Host-using-Enum4linux/)
+11. [Lab 11 Enumerating Information from Windows and Samba Host using Enum4linux](#lab-11-enumerating-information-from-windows-and-samba-host-using-enum4linux) — [View Lab](./Lab%2011%20Enumerating%20Information%20from%20Windows%20and%20Samba%20Host%20using%20Enum4linux/)
 
 ---
 
