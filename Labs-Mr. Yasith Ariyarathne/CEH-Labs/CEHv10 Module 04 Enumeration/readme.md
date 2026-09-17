@@ -24,7 +24,7 @@ This repository contains practical laboratory documentation, procedure logs, and
 
 9. [Lab 9 SNMP Enumeration using SNMP Enum](#lab-9-snmp-enumeration-using-snmp-enum) — [View Lab](./Lab%209%20SNMP%20Enumeration%20using%20SNMP%20Enum/)
 
-10. [Lab 10 LDAP Enumeration using Active Directory Explorer](#lab-10-ldap-enumeration-using-active-directory-explorer) — [View Lab](./Lab%209%20SNMP%20Enumeration%20using%20SNMP%20Enum/)
+10. [Lab 10 LDAP Enumeration using Active Directory Explorer](#lab-10-ldap-enumeration-using-active-directory-explorer) — [View Lab](./Lab%2010%20LDAP%20Enumeration%20using%20Active%20Directory%20Explorer/)
 
 11. [Lab 11 Enumerating Information from Windows and Samba Host using Enum4linux](#lab-11-enumerating-information-from-windows-and-samba-host-using-enum4linux) — [View Lab](./Lab%2011%20Enumerating-Information-from-Windows-and-Samba-Host-using-Enum4linux/)
 

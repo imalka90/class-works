@@ -22,7 +22,7 @@ The objective of this lab is to utilize **SNMP enumeration tools** (such as `snm
 ### Task 2: Test Default Community Strings & Query System Information
 
 1. Executed an initial community string check and system walk using `snmpwalk` with the default community string `public` (`snmpwalk -v 2c -c public 192.168.45.131 system`).Using the community string public, we queried the standard system MIB tree (1.3.6.1.2.1.1) to pull system-level identification data from the target machine.
-snmpwalk -v 2c -c public 192.168.45.131 1.3.6.1.2.1.1
+`snmpwalk -v 2c -c public 192.168.45.131 1.3.6.1.2.1.1`
 
 2. Extracted basic system description, uptime, and contact details.
 
@@ -31,7 +31,8 @@ snmpwalk -v 2c -c public 192.168.45.131 1.3.6.1.2.1.1
 
 ### Task 3: Comprehensive Enumeration of Running Services and Software Inventory
 
-1. Executed a deeper automated enumeration tool (`snmp-check` or `snmpwalk` with broader MIB trees) against the target to extract running software, storage details, and user lists.
+1. Executed a deeper automated enumeration tool (`snmp-check` or `snmpwalk` with broader MIB trees) against the target to extract running software, storage details, and user lists. COMMAND: `snmp-check 192.168.45.131 -c public`
+
 2. Cataloged the structural output returned by the SNMP agent.
 
 📸 **Verification Screenshot 3: Full SNMP Enumeration Output**
